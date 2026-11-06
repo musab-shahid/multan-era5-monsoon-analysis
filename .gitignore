@@ -1,0 +1,12 @@
+# Private/API credentials
+.cdsapirc
+.env
+.env.*
+*.key
+# Source grids stay in Drive
+*.nc
+*.grib
+*.grb
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
