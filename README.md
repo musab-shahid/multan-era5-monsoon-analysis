@@ -59,3 +59,10 @@ The 10-year study period is too short to establish a long-term climate trend. ER
 ## Data source
 
 Copernicus Climate Change Service, ECMWF ERA5 hourly data on single levels, accessed via the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/). Upstream data redistribution remains subject to its terms.
+
+## Related research portfolio
+
+- [South Punjab Drought Event Analysis (2001–2025)](https://github.com/musab-shahid/south-punjab-drought-analysis) — separate independent drought research; see its methodological limitations.
+- [Multan Urban Heat Island Analysis (2013–2023)](https://github.com/musab-shahid/multan-uhi-analysis) — undergraduate Landsat and Google Earth Engine analysis.
+
+**Attribution reminder:** This ERA5 project is collaborative and credits Musab Shahid, Alishba Ehsan, Mudassir Mujahid, and Bareera; this cross-link does not assign unverified individual contributions.
