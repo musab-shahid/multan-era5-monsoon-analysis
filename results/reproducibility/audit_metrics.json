@@ -1,0 +1,12 @@
+{
+  "legacy_trend_slope": 5.957842612121213,
+  "legacy_trend_p": 0.5908988814420632,
+  "common_window_trend_slope": 5.911544152462122,
+  "common_window_trend_p": 0.5940440661075574,
+  "common_window_days": 121,
+  "empty_days_created_by_legacy_resample": 2189,
+  "legacy_resampled_95th": 2.7431910991668693,
+  "legacy_observed_utc_95th": 9.01036491394043,
+  "corrected_complete_pkt_95th": 9.03042221069336,
+  "schema": "Preserved NetCDF4/HDF5 snapshot only; unscaled float32 variables on a fixed 3x3 grid"
+}

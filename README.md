@@ -6,12 +6,25 @@
 
 A **collaborative** analysis of monsoon rainfall and temperature in the Multan region, with a closer look at the 2022 season.
 
-**Contributors:** Musab Shahid · Alishba Ehsan · Mudassir Mujahid · Bareera  
+**Project lead and primary analyst:** Musab Shahid, who initiated the ERA5 practice project following a climate-modeling conference in Bahawalpur. [Contribution statement](docs/CONTRIBUTIONS.md).
+
+**Original team:** Musab Shahid · Alishba Ehsan · Mudassir Mujahid · Bareera  
 **Data:** ECMWF ERA5 hourly single-level reanalysis via the Copernicus Climate Data Store  
 **Study region:** 30.0–30.5°N, 71.2–71.8°E (approximately 3×3 ERA5 grid points)  
 **Period:** June–September 2016–2025, plus full-year 2022 context
 
 > **Research scope:** Reanalysis-derived rainfall and temperature, **not** direct rain-gauge observations or a hydrological flood-routing simulation. A 10-year record is insufficient to establish a long-term climate trend.
+
+## November 2026: executed reproducibility audit
+
+All ten preserved hourly files were checked and historical daily/annual CSV results reproduced within numerical tolerances. The new analysis corrects rainfall interval assignment, excludes unobserved interseason days, and qualifies incomplete seasonal coverage. Six focused tests pass.
+
+- **[Read the audit and corrections](docs/REPRODUCIBILITY_AUDIT.md)** · [Executed audit notebook](notebooks/ERA5_Reproducibility_Audit.ipynb) · [Corrected tables and input hashes](results/reproducibility/)
+- The corrected 31 August 2020 PKT rainfall is **106.50 mm**, compared with the historical timestamp-grouped 104.29 mm.
+- Nine files lack four initial PKT rainfall hours. Use the complete **2 June–30 September** comparison window: trend **+5.91 mm/year, p=0.594**, not statistically significant. Do not label partial observed sums as complete monsoon totals.
+- The historical notebook source inserts 2,189 unobserved interseason days as zeros; the new script does not. See the audit for the percentile discrepancy between source and saved results.
+
+![Corrected timing and complete common window](results/reproducibility/timing_and_common_window.png)
 
 ## Explore the project
 
@@ -30,7 +43,7 @@ A **collaborative** analysis of monsoon rainfall and temperature in the Multan r
 
 How variable were monsoon rainfall totals over 2016–2025? Is the fitted trend statistically meaningful? How did 2022 differ in seasonal total, daily intensity, heavy-rain frequency and temperature?
 
-## Key findings
+## Historical findings (preserved; read the audit amendment)
 
 | Indicator | Result | Interpretation |
 | --- | ---: | --- |
@@ -59,13 +72,13 @@ See the [full figures gallery](figures/).
 
 The notebook reads the original hourly **NetCDF** files kept in Google Drive, averages the small ERA5 spatial grid, converts precipitation from metres to millimetres and temperature from Kelvin to Celsius, and aggregates by calendar date after a UTC→Pakistan-time conversion. It computes seasonal totals, wettest days, >10 mm daily rainfall counts, dry spells, regression and visualizations.
 
-**Important timing qualification:** ERA5 hourly precipitation is accumulated over the preceding hour. A day boundary based on the hour-ending timestamp can shift an accumulation at midnight to the next calendar day. This affects interpretation of daily extremes and requires an hourly-source check before any revised historical values are published. The local/UTC window difference is separately explained in the [methodology note](docs/METHODOLOGY_AND_RESULT_RECONCILIATION.md).
+**Important timing qualification:** ERA5 hourly precipitation is accumulated over the preceding hour. A day boundary based on the hour-ending timestamp can shift an accumulation at midnight to the next calendar day. This affects daily extremes; the completed [hourly-source audit](docs/REPRODUCIBILITY_AUDIT.md) now provides revised values. The local/UTC window difference is separately explained in the [methodology note](docs/METHODOLOGY_AND_RESULT_RECONCILIATION.md).
 
 - Daily and annual processed summaries were rechecked against the published CSVs: totals, wettest-day records, heavy-rain counts and longest dry spells match to reported precision.
-- The repository has **not** established a fresh independent execution from clean NetCDF inputs. Package versions are not pinned.
+- An independent numerical reproduction from all ten preserved NetCDF files has now completed. The audit records package versions and input hashes. This does not certify a newly provisioned environment or an independent CDS download.
 - Raw GRIB/NetCDF data are in the [research archive on Drive](https://drive.google.com/drive/folders/1-VWthMW-y28WWE5xLciciaOSFqXTT3I_), not GitHub. [Data provenance](data/README.md) documents the outputs.
 - 2022 rainfall extremes do not establish causation of observed flooding; there is no terrain, streamflow, drainage or inundation model here.
-- All four contributors are credited. Specific individual contributions are **not** asserted without evidence.
+- Original team credits are retained; Musab's leadership and primary analysis role are documented from his account in [Contributions](docs/CONTRIBUTIONS.md).
 
 ## Research portfolio
 

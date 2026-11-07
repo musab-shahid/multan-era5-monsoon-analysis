@@ -1,0 +1,8 @@
+check,max_abs_difference,tolerance,passed
+daily_precip_mm,1.7749023442092948e-06,0.0001,True
+daily_temp_c,1.9042968730786924e-06,0.0001,True
+annual_monsoon_total_mm,3.214843749788088e-05,0.001,True
+annual_wettest_day_mm,1.7749023442092948e-06,0.0001,True
+annual_heavy_rain_days_count,0.0,0.0,True
+annual_longest_dry_spell_days,0.0,0.0,True
+wettest_dates,0.0,0.0,True

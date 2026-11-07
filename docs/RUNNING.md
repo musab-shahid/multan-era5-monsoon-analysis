@@ -1,3 +1,9 @@
+# Audited reproduction (November 2026)
+
+Start with [the executed audit and corrections](REPRODUCIBILITY_AUDIT.md). Install `requirements-reproducibility.txt`, then run `python src/reproduce_monsoon.py --input-dir /path/to/ERA5_Multan` from the repository root. Test with `python -m unittest discover -s tests -v`. Outputs go to `results/reproducibility/`; historical CSVs are retained as comparison baselines. For the audit notebook, install Jupyter and set `ERA5_INPUT_DIR` to your local input directory before running.
+
+The historical workflow below is preserved for context; use the audit outputs for revised timing and coverage.
+
 # Running without re-downloading ERA5 data
 
 You do **not** need to run the notebook to view the saved figures and report.
@@ -13,3 +19,4 @@ To reproduce its computations:
 Python libraries include `xarray`, `numpy`, `pandas`, `scipy`, `matplotlib`, and a NetCDF reader. Versions are not pinned; clean-environment execution has not been independently verified.
 
 **Security:** Older, unredacted notebooks and the historical code PDF contain a CDS API credential. They are deliberately excluded here. Rotate or revoke that credential in your CDS account. This analysis-only notebook requires no CDS credential.
+

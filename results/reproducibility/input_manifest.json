@@ -1,0 +1,252 @@
+[
+  {
+    "file": "multan_2016.nc",
+    "sha256": "3fa39c0ebf40f7144ed50996dc14243740bfa1d9509318b4430b2ef724715bf5",
+    "bytes": 302714,
+    "hours": 2928,
+    "first_utc": "2016-06-01 00:00:00",
+    "last_utc": "2016-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2017.nc",
+    "sha256": "9c59c5c546a4abbd77526b2f97001063e7ea022dcb8c0d5ab373c021a1771938",
+    "bytes": 301982,
+    "hours": 2928,
+    "first_utc": "2017-06-01 00:00:00",
+    "last_utc": "2017-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2018.nc",
+    "sha256": "ee9f9ca485c14bb1c43b8e08d55be217b967611888c377122ff5a7b7169cb411",
+    "bytes": 299124,
+    "hours": 2928,
+    "first_utc": "2018-06-01 00:00:00",
+    "last_utc": "2018-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2019.nc",
+    "sha256": "ba1702d96eaca4ab218073dcd499cafefcb0dafaac27f1d730d6c30dfa1e966c",
+    "bytes": 303029,
+    "hours": 2928,
+    "first_utc": "2019-06-01 00:00:00",
+    "last_utc": "2019-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2020.nc",
+    "sha256": "2928ac775e9536704d54da7ed4f8ea8989cd80547c791f7ffda93f528ea4c20b",
+    "bytes": 299909,
+    "hours": 2928,
+    "first_utc": "2020-06-01 00:00:00",
+    "last_utc": "2020-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2021.nc",
+    "sha256": "dc90ad6fc57d4464ba8559cfe1559d8e53520378e06ae2dd12b862eb0d88cd45",
+    "bytes": 297449,
+    "hours": 2928,
+    "first_utc": "2021-06-01 00:00:00",
+    "last_utc": "2021-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2022_full.nc",
+    "sha256": "981d1191a4c0494989249368d6adbc2394eef9827bcabf1ff8c8a5f12dd8f51d",
+    "bytes": 783130,
+    "hours": 8760,
+    "first_utc": "2022-01-01 00:00:00",
+    "last_utc": "2022-12-31 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2023.nc",
+    "sha256": "f9305d169a542764a5ac96de8762273f4d3dfd7510cfcb9cc84d93213d73d52b",
+    "bytes": 298458,
+    "hours": 2928,
+    "first_utc": "2023-06-01 00:00:00",
+    "last_utc": "2023-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2024.nc",
+    "sha256": "4d6dbe02ed1dde8f2fb7537ae1f41cc36d5fbbe678121cbbab620d449616e82d",
+    "bytes": 301492,
+    "hours": 2928,
+    "first_utc": "2024-06-01 00:00:00",
+    "last_utc": "2024-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  },
+  {
+    "file": "multan_2025.nc",
+    "sha256": "fdb471dc1cffdf06b5b2b0d2a2f5d1a4b60b0e11d70da6aa4d88837aafa37f4b",
+    "bytes": 300537,
+    "hours": 2928,
+    "first_utc": "2025-06-01 00:00:00",
+    "last_utc": "2025-09-30 23:00:00",
+    "latitude": [
+      30.5,
+      30.25,
+      30.0
+    ],
+    "longitude": [
+      71.25,
+      71.5,
+      71.75
+    ],
+    "missing_tp": 0,
+    "missing_t2m": 0,
+    "tp_units": "m",
+    "t2m_units": "K",
+    "expver": [
+      "0001"
+    ]
+  }
+]
