@@ -1,0 +1,8 @@
+{
+  "mean_rainfall_mm": 200.1888550561992,
+  "slope_mm_year": 5.911545234271273,
+  "p_value": 0.5940440242948162,
+  "r_squared": 0.03708040149889292,
+  "rainfall_2022_vs_other_mean_pct": 106.91157394419251,
+  "temperature_2022_vs_other_mean_c": -0.933574717171723
+}

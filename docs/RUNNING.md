@@ -1,3 +1,7 @@
+# Final research release
+
+After the checked hourly aggregation below, run `python src/build_research_release.py`. This builds `results/final/` and `docs/FINAL_REPORT.md` from the checked daily series, using 121 complete days in every year. The PDF renderer is `src/render_final_report.py` and additionally needs ReportLab and Pillow. Run it after building the report source.
+
 # Audited reproduction (November 2026)
 
 Start with [the executed audit and corrections](REPRODUCIBILITY_AUDIT.md). Install `requirements-reproducibility.txt`, then run `python src/reproduce_monsoon.py --input-dir /path/to/ERA5_Multan` from the repository root. Test with `python -m unittest discover -s tests -v`. Outputs go to `results/reproducibility/`; historical CSVs are retained as comparison baselines. For the audit notebook, install Jupyter and set `ERA5_INPUT_DIR` to your local input directory before running.

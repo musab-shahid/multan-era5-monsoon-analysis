@@ -38,6 +38,6 @@ The reader uses h5py for the exact validated NetCDF4/HDF5 schema and rejects inc
 
 Six synthetic tests cover midnight assignment, complete 24-hour days, missing hours, interseason gaps, missing-day dry-spell breaks and UTC/PKT differences. Environment versions are recorded. This is an independent numerical reproduction using available packages, not a newly provisioned clean-environment certification or a rerun of every historical plotting cell.
 
-## Remaining research work
+## Release scope
 
-Retrieve the missing boundary hours before reporting complete PKT monsoon totals for all years. Reconcile historical plots with the corrected tables. Independent station comparisons, uncertainty evaluation and a longer climate record remain necessary for stronger scientific claims. The original paper is preserved; use this amendment when quoting revised daily metrics.
+The completed research release uses 2 June-30 September in all ten years. See [the final report](FINAL_REPORT.pdf) and [final tables and figures](../results/final/); these supersede historical numerical summaries for presentation. Retrieving boundary hours would enable full 1 June-30 September totals. Station comparisons and a longer record would be optional extensions, not requirements for this descriptive project's completion.

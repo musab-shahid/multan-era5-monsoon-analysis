@@ -1,32 +1,9 @@
-# Multan Monsoon: reader and archive guide
+# Project guide
 
-Reviewed 7 November 2026.
+Start with [the final report](FINAL_REPORT.pdf), [readable report](FINAL_REPORT.md), and [final tables and figures](../results/final/). These are the canonical November 2026 research release, using 2 June-30 September consistently for 2016-2025.
 
-## Read in this order
+The [running guide](RUNNING.md) provides reproduction instructions. The executed notebook, source code, tests, input manifest and environment record support the release. Technical correction history belongs in [the audit](REPRODUCIBILITY_AUDIT.md).
 
-1. [Project overview](../README.md).
-2. [Research report](../docs/original_analysis_report.pdf).
-3. [Execution or methods guide](RUNNING.md).
-4. Inspect the notebook and supporting outputs before reusing numerical claims.
+The original report, poster, presentation, figures and data/processed tables are retained historical materials. Their numerical summaries can use older time conventions; use the final release for current findings. The original team credits are preserved in [Contributions](CONTRIBUTIONS.md).
 
-## Report status
-
-Collaborative work by Musab Shahid, Alishba Ehsan, Mudassir Mujahid and Bareera. Read the UTC/PKT reconciliation before quoting daily extremes. A fresh independent run from raw NetCDF inputs remains outstanding.
-
-## Repository layout
-
-`notebooks/` contains the analysis-only notebook; `data/processed/` holds daily and seasonal summaries; `figures/` contains charts; `docs/` holds the original report, poster, run guide and reconciliation.
-
-The raw `ERA5_Multan` Drive folder is separate from the curated report archive. Follow the run guide and keep its expected input path.
-
-## Drive organization
-
-- [Project archive](https://drive.google.com/drive/folders/1-VWthMW-y28WWE5xLciciaOSFqXTT3I_) holds original working files.
-- [Curated project folder](https://drive.google.com/drive/folders/1jR3fky0yjAMjyXkKj75DSS3OiFVMStul) contains a report copy and navigation guide.
-- [Central project index](https://drive.google.com/drive/folders/1dE5bU7ok7c8q_XpAfkATpt4wYOsNZH2E) links all four studies. Drive access may be restricted.
-
-The index is a navigation layer. Existing source folder names and IDs are preserved; no permission changes or data-path migration are implied. Report copies are snapshots, not synchronized mirrors. Original documents and live code remain the source of truth for their respective versions.
-
-## Review boundaries
-
-This organization pass checks files, links and documentation. It does not establish a new scientific replication, peer review or institutional endorsement. Follow the specific methodological qualifications in the README and report.
+Drive holds original hourly inputs and archived artifacts. The 06_Final_Research_Release folder holds the final PDF and portable release package. The public repository and portfolio provide reviewer access without changing Drive permissions.
