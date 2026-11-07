@@ -1,4 +1,6 @@
 # Multan Monsoon Rainfall & Temperature Analysis (ERA5, 2016–2025)
+**Reader guide:** [Project structure and report status](docs/PROJECT_GUIDE.md) · [Public portfolio](https://musab-shahid-earth-observation.brinycourt4.chatgpt.site/)
+
 
 **ERA5 reanalysis · Python/xarray · Monsoon variability · Descriptive statistics · 2022 case study**
 
@@ -66,6 +68,8 @@ The notebook reads the original hourly **NetCDF** files kept in Google Drive, av
 - All four contributors are credited. Specific individual contributions are **not** asserted without evidence.
 
 ## Research portfolio
+
+[Fourth project: Multan Environmental Heat Screening](https://github.com/musab-shahid/multan-environmental-heat-screening) adds source-ID mapping and temporal model evaluation.
 
 | Project | Focus | Research context |
 | --- | --- | --- |
