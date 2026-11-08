@@ -23,4 +23,3 @@ To reproduce its computations:
 Python libraries include `xarray`, `numpy`, `pandas`, `scipy`, `matplotlib`, and a NetCDF reader. Versions are not pinned; clean-environment execution has not been independently verified.
 
 **Security:** Older, unredacted notebooks and the historical code PDF contain a CDS API credential. They are deliberately excluded here. Rotate or revoke that credential in your CDS account. This analysis-only notebook requires no CDS credential.
-

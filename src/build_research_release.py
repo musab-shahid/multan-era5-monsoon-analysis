@@ -37,7 +37,7 @@ axes[0].plot(a.year,a.temperature_c,'o-',color='#bd8745');axes[0].scatter([2022]
 s=daily.loc['2022'];axes[1].plot(s.index,s.precip_mm.cumsum(),color='#247d72',lw=2);axes[1].set(ylabel='Cumulative rainfall (mm)',title='Rainfall accumulation in 2022');import matplotlib.dates as mdates
 axes[1].xaxis.set_major_formatter(mdates.DateFormatter('%b'));axes[1].xaxis.set_major_locator(mdates.MonthLocator());fig.tight_layout();fig.savefig(out/'temperature_and_2022.png',dpi=180);plt.close(fig)
 pages=[
- {'title':'Multan monsoon variability','subtitle':'ERA5 rainfall and temperature | 2016-2025','sections':[
+ {'title':'Monsoon Rainfall & Flood-Risk Analysis for Multan','subtitle':'ERA5 rainfall and temperature | 2016-2025','sections':[
  ['Overview','This study describes interannual rainfall and near-surface temperature variability over a small ERA5 grid around Multan. It compares the same 121 Pakistan-calendar days, 2 June to 30 September, in each year from 2016 through 2025. The objective is to characterize variability and the distinctive 2022 season, rather than attribute flooding or establish a long-term climate trend.'],
  ['Key findings',f'Rainfall ranged from 53.4 mm in 2021 to 374.2 mm in 2022. The ten-year mean was {mean:.1f} mm. The fitted slope was +{trend.slope:.2f} mm/year (p = {trend.pvalue:.3f}), which does not establish a statistically significant linear trend. In the common window, 2022 was also the coolest year, with a mean 2 m temperature of {row22.temperature_c:.2f} C.'],
  ['Project context','Project lead and primary analyst: Musab Shahid. Musab initiated this ERA5 practice project following a climate-modeling conference in Bahawalpur. Original team: Musab Shahid, Alishba Ehsan, Mudassir Mujahid and Bareera. The contribution statement records the leadership account supplied by Musab.']],
@@ -61,7 +61,7 @@ pages=[
  ['Sources and materials','Data: Copernicus Climate Change Service / ECMWF, ERA5 hourly data on single levels, Climate Data Store: https://cds.climate.copernicus.eu/ . Accumulation convention: ECMWF ERA5 data documentation, section on mean rates and accumulations. Project repository: https://github.com/musab-shahid/multan-era5-monsoon-analysis . Full technical provenance and the documentation link are in docs/REPRODUCIBILITY_AUDIT.md.']]}
 ]
 (out/'report_content.json').write_text(json.dumps(pages,indent=2),encoding='utf-8')
-md=['# Multan monsoon variability\n\nFinal research report | 8 November 2026\n']
+md=['# Monsoon Rainfall & Flood-Risk Analysis for Multan\n\nFinal research report | 8 November 2026\n']
 for i,p in enumerate(pages):
  if i:md.append('## '+p['title'])
  for title,body in p['sections']:md+=['### '+title,body]

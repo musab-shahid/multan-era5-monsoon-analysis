@@ -29,6 +29,6 @@ for i,p in enumerate(pages):
   table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#153e44')),('TEXTCOLOR',(0,0),(-1,0),colors.white),('FONTNAME',(0,0),(-1,0),'Helvetica-Bold'),('FONTSIZE',(0,0),(-1,-1),9),('ALIGN',(1,0),(-1,-1),'RIGHT'),('ROWBACKGROUNDS',(0,1),(-1,-1),[colors.HexColor('#eef5f4'),colors.white]),('BOTTOMPADDING',(0,0),(-1,-1),4)]))
   story.extend([Spacer(1,8),table])
 def footer(c,doc):
- c.setStrokeColor(colors.HexColor('#cddbd8'));c.line(48,42,547,42);c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#52626b'));c.drawString(48,29,'Musab Shahid | Multan monsoon variability | Final release, November 2026');c.drawRightString(547,29,str(doc.page))
-pdf=R/'docs/FINAL_REPORT.pdf';SimpleDocTemplate(str(pdf),pagesize=(595.28,841.89),rightMargin=48,leftMargin=48,topMargin=45,bottomMargin=55,title='Multan monsoon variability: ERA5 2016-2025',author='Musab Shahid').build(story,onFirstPage=footer,onLaterPages=footer)
+ c.setStrokeColor(colors.HexColor('#cddbd8'));c.line(48,42,547,42);c.setFont('Helvetica',8);c.setFillColor(colors.HexColor('#52626b'));c.drawString(48,29,'Musab Shahid | Monsoon Rainfall & Flood-Risk Analysis for Multan | Final release, November 2026');c.drawRightString(547,29,str(doc.page))
+pdf=R/'docs/FINAL_REPORT.pdf';SimpleDocTemplate(str(pdf),pagesize=(595.28,841.89),rightMargin=48,leftMargin=48,topMargin=45,bottomMargin=55,title='Monsoon Rainfall & Flood-Risk Analysis for Multan: ERA5 2016-2025',author='Musab Shahid').build(story,onFirstPage=footer,onLaterPages=footer)
 print(pdf)
